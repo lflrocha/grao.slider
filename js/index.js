@@ -48,33 +48,23 @@ window.onresize = function(event) {
     inicio();
 };
 
+
+
+
+
+
+
+
+
+
 video1 = document.getElementsByTagName('video')[0]
 video2 = document.getElementsByTagName('video')[1]
 
-var v1 = false;
-var v2 = false;
+start();
+inicio();
 
-video1.addEventListener('loadeddata', function() {
-   v1 = true;
-   if (v1 == true && v2 == true) {
-     start();
-     inicio();
-     console.log('1');
- } else {
-     console.log('esperando 1');
- }
-}, false);
 
-video2.addEventListener('loadeddata', function() {
-    v2 = true;
-    if (v1 == true && v2 == true) {
-      start();
-      inicio();
-      console.log('2');
-    } else {
-        console.log('esperando 2');
-    }
-}, false);
+
 
 
 video1.addEventListener('timeupdate', updateProgressBar, false);

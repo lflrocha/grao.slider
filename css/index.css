@@ -17,15 +17,17 @@ body {
 
 #video-compare-container {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: auto;
+    transform: scale(50%,100%);
 }
 
 #video-compare-container > video {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 0;
+    top: 50%;
+
 }
 
 #video-clipper {
@@ -41,6 +43,24 @@ body {
     height: auto;
     postion: absolute;
 }
+
+
+.bottom {
+    display: box;
+    bottom: 0;
+}
+
+.top {
+    display: box;
+    position: absolute;
+}
+
+
+
+
+
+
+
 
 #brackets {
     margin-top: 45vh;
